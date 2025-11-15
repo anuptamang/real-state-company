@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "label": "Title"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "required": false,
+      "label": "SEO"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true,
+      "label": "Price"
+    },
+    "location": {
+      "type": "string",
+      "required": true,
+      "label": "Location"
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "label": "Description"
+    },
+    "bedrooms": {
+      "type": "integer",
+      "required": false,
+      "label": "Bedrooms"
+    },
+    "bathrooms": {
+      "type": "integer",
+      "required": false,
+      "label": "Bathrooms"
+    },
+    "sqft": {
+      "type": "integer",
+      "required": false,
+      "label": "Square Feet"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "label": "Images"
+    }
+  }
+}

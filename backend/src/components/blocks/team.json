@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_team",
+  "info": {
+    "displayName": "team",
+    "description": "",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false,
+      "label": "Title"
+    },
+    "team": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team-member.team-member",
+      "required": false,
+      "label": "Team Members"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_shared_menu_items",
+  "info": {
+    "displayName": "Menu Item",
+    "icon": "link",
+    "description": "Menu item that can link to a page, property, or custom URL"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false,
+      "label": "Title",
+      "description": "Override title (defaults to page/property title)"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page",
+      "required": false,
+      "label": "Page",
+      "description": "Link to a page"
+    },
+    "property": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property.property",
+      "required": false,
+      "label": "Property",
+      "description": "Link to a property"
+    },
+    "customUrl": {
+      "type": "string",
+      "required": false,
+      "label": "Custom URL",
+      "description": "Custom URL (e.g., /about, https://example.com)"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0,
+      "label": "Order",
+      "description": "Display order (lower numbers appear first)"
+    },
+    "parentOrder": {
+      "type": "integer",
+      "required": false,
+      "label": "Parent Order",
+      "description": "Order of parent item (for hierarchy - leave empty for top-level items)"
+    }
+  }
+}

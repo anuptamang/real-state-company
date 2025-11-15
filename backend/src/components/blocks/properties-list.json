@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_properties-list",
+  "info": {
+    "displayName": "properties-list",
+    "description": "",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false,
+      "label": "Title"
+    },
+    "properties": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::property.property",
+      "required": false,
+      "label": "Properties"
+    }
+  }
+}

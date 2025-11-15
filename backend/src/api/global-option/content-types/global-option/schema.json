@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_options",
+  "info": {
+    "singularName": "global-option",
+    "pluralName": "global-options",
+    "displayName": "Global Options",
+    "description": "Global site settings including header and footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.site-info",
+      "required": false,
+      "label": "Site Info"
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header",
+      "required": false,
+      "label": "Header"
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.footer",
+      "required": false,
+      "label": "Footer"
+    }
+  }
+}

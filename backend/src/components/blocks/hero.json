@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_blocks_heroes",
+  "info": {
+    "displayName": "hero",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "label": "Title"
+    },
+    "subtitle": {
+      "type": "string",
+      "required": false,
+      "label": "Subtitle"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"],
+      "label": "Image"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button",
+      "required": false,
+      "label": "Call to Action (CTA)"
+    }
+  }
+}

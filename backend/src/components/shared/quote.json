@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_quotes",
+  "info": {
+    "displayName": "Quote",
+    "icon": "indent",
+    "description": "Quote block with title and body"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false,
+      "label": "Title"
+    },
+    "body": {
+      "type": "text",
+      "required": true,
+      "label": "Quote Text"
+    }
+  }
+}

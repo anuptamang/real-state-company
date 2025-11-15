@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_headers",
+  "info": {
+    "displayName": "header",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"],
+      "label": "Logo"
+    },
+    "logoText": {
+      "type": "string",
+      "required": false,
+      "label": "Logo Text"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu",
+      "label": "Menu",
+      "description": "Select a menu to display in the header (WordPress-style)"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_footers",
+  "info": {
+    "displayName": "footer",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "copyright": {
+      "type": "string",
+      "required": false,
+      "label": "Copyright"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu",
+      "label": "Footer Menu",
+      "description": "Select a menu to display in the footer (WordPress-style)"
+    },
+    "socialMedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social-media",
+      "required": false,
+      "label": "Social Media"
+    }
+  }
+}

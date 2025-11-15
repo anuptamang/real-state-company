@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_shared_pin-info",
+  "info": {
+    "displayName": "pin-info",
+    "description": "",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "label": "Title"
+    },
+    "description": {
+      "type": "text",
+      "required": false,
+      "label": "Description"
+    },
+    "address": {
+      "type": "string",
+      "required": false,
+      "label": "Address"
+    },
+    "phone": {
+      "type": "string",
+      "required": false,
+      "label": "Phone"
+    },
+    "email": {
+      "type": "email",
+      "required": false,
+      "label": "Email"
+    }
+  }
+}

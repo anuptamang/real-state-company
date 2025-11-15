@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_media",
+  "info": {
+    "displayName": "Media",
+    "icon": "file-video",
+    "description": "Media file (image, video, or document)"
+  },
+  "options": {},
+  "attributes": {
+    "file": {
+      "allowedTypes": ["images", "files", "videos"],
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "label": "File"
+    }
+  }
+}

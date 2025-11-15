@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_social-media",
+  "info": {
+    "displayName": "social-media",
+    "description": "",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Name"
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "label": "URL"
+    }
+  }
+}

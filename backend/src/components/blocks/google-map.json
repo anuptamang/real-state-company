@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_blocks_google_maps",
+  "info": {
+    "displayName": "google-map",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "required": true,
+      "label": "Address"
+    },
+    "latitude": {
+      "type": "decimal",
+      "required": true,
+      "label": "Latitude"
+    },
+    "longitude": {
+      "type": "decimal",
+      "required": true,
+      "label": "Longitude"
+    },
+    "zoom": {
+      "type": "integer",
+      "required": false,
+      "default": 15,
+      "label": "Zoom Level"
+    },
+    "apiKey": {
+      "type": "string",
+      "required": false,
+      "label": "API Key"
+    },
+    "pinInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.pin-info",
+      "required": false,
+      "label": "Pin Information"
+    }
+  }
+}

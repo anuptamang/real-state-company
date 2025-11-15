@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_blocks_content",
+  "info": {
+    "displayName": "content",
+    "description": "",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "label": "Content"
+    }
+  }
+}

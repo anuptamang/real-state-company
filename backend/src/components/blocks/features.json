@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_features",
+  "info": {
+    "displayName": "features",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false,
+      "label": "Title"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature",
+      "required": true,
+      "label": "Features"
+    }
+  }
+}

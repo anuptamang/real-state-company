@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_site-infos",
+  "info": {
+    "name": "SiteInfo",
+    "icon": "allergies",
+    "displayName": "Site Info",
+    "description": "Site information"
+  },
+  "options": {},
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "required": true
+    },
+    "siteUrl": {
+      "type": "string",
+      "required": true
+    },
+    "favicon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos"]
+    },
+    "siteDescription": {
+      "type": "text",
+      "required": true
+    },
+    "defaultSeo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

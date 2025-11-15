@@ -1,0 +1,1229 @@
+{
+  "pages": [
+    {
+      "id": "1",
+      "slug": "home",
+      "title": "Welcome to Our Real Estate Company",
+      "metaTitle": "Home - Real Estate Company",
+      "metaDescription": "Find your dream property with our expert real estate services",
+      "blocks": [
+        {
+          "id": "1",
+          "__component": "blocks.hero",
+          "title": "Find Your Dream Property",
+          "subtitle": "Expert real estate services for buyers and sellers",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80",
+            "alt": "Beautiful home exterior"
+          },
+          "cta": {
+            "text": "Browse Properties",
+            "url": "/properties"
+          }
+        },
+        {
+          "id": "2",
+          "__component": "blocks.features",
+          "title": "Why Choose Us",
+          "features": [
+            {
+              "title": "Expert Agents",
+              "description": "Experienced real estate professionals",
+              "icon": "user"
+            },
+            {
+              "title": "Wide Selection",
+              "description": "Hundreds of properties to choose from",
+              "icon": "home"
+            },
+            {
+              "title": "Best Prices",
+              "description": "Competitive pricing and great deals",
+              "icon": "dollar-sign"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "__component": "blocks.cta",
+          "heading": "Ready to Find Your Home?",
+          "text": "Contact us today to get started on your property search",
+          "button": {
+            "text": "Contact Us",
+            "url": "/contact"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "slug": "about",
+      "title": "About Us",
+      "metaTitle": "About - Real Estate Company",
+      "metaDescription": "Learn about our real estate company and team",
+      "blocks": [
+        {
+          "id": "1",
+          "__component": "blocks.hero",
+          "title": "About Our Company",
+          "subtitle": "Your trusted real estate partner",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1920&q=80",
+            "alt": "About us"
+          }
+        },
+        {
+          "id": "2",
+          "__component": "blocks.content",
+          "content": "<h2>Our Story</h2><p>We are a leading real estate company with over 20 years of experience helping clients find their perfect properties. Our team of expert agents is dedicated to providing exceptional service and making your real estate journey smooth and successful.</p><h2>Our Mission</h2><p>Our mission is to help individuals and families find their dream homes while providing expert guidance throughout the entire buying and selling process. We believe in building lasting relationships with our clients based on trust, integrity, and exceptional service.</p><h2>Why Choose Us</h2><p>With a proven track record of successful transactions and thousands of satisfied clients, we have established ourselves as a trusted name in the real estate industry. Our comprehensive knowledge of the local market, combined with our commitment to excellence, sets us apart.</p>"
+        },
+        {
+          "id": "3",
+          "__component": "blocks.team",
+          "title": "Meet Our Team",
+          "team": [
+            {
+              "id": "1",
+              "name": "Sarah Johnson",
+              "role": "Senior Real Estate Agent",
+              "bio": "10+ years of experience in real estate",
+              "image": {
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces&q=80",
+                "alt": "Sarah Johnson"
+              },
+              "email": "sarah@realestate.com",
+              "linkedin": "https://linkedin.com/in/sarah-johnson"
+            },
+            {
+              "id": "2",
+              "name": "Mike Chen",
+              "role": "Property Consultant",
+              "bio": "Specializes in luxury properties",
+              "image": {
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces&q=80",
+                "alt": "Mike Chen"
+              },
+              "email": "mike@realestate.com",
+              "linkedin": "https://linkedin.com/in/mike-chen"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "__component": "blocks.testimonials",
+          "title": "What Our Clients Say",
+          "testimonials": [
+            {
+              "id": "1",
+              "name": "John Doe",
+              "role": "Home Buyer",
+              "content": "Excellent service! Found my dream home in no time.",
+              "rating": 5,
+              "avatar": {
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=faces&q=80",
+                "alt": "John Doe"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Jane Smith",
+              "role": "Property Seller",
+              "content": "Professional team that helped me sell my property quickly.",
+              "rating": 5,
+              "avatar": {
+                "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=faces&q=80",
+                "alt": "Jane Smith"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "slug": "properties",
+      "title": "Our Properties",
+      "metaTitle": "Properties - Real Estate Company",
+      "metaDescription": "Browse our selection of available properties",
+      "blocks": [
+        {
+          "id": "1",
+          "__component": "blocks.hero",
+          "title": "Available Properties",
+          "subtitle": "Find your perfect home today",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80",
+            "alt": "Beautiful properties showcase"
+          }
+        },
+        {
+          "id": "2",
+          "__component": "blocks.properties-list",
+          "title": "All Properties",
+          "properties": [
+            {
+              "id": "1",
+              "slug": "modern-family-home",
+              "title": "Modern Family Home",
+              "price": 450000,
+              "location": "123 Main St, City, State",
+              "bedrooms": 4,
+              "bathrooms": 3,
+              "sqft": 2500,
+              "image": {
+                "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+                "alt": "Modern family home"
+              }
+            },
+            {
+              "id": "2",
+              "slug": "luxury-condo",
+              "title": "Luxury Condo",
+              "price": 320000,
+              "location": "456 Oak Ave, City, State",
+              "bedrooms": 2,
+              "bathrooms": 2,
+              "sqft": 1500,
+              "image": {
+                "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+                "alt": "Luxury condo"
+              }
+            },
+            {
+              "id": "3",
+              "slug": "spacious-villa",
+              "title": "Spacious Villa",
+              "price": 750000,
+              "location": "789 Pine Rd, City, State",
+              "bedrooms": 5,
+              "bathrooms": 4,
+              "sqft": 4000,
+              "image": {
+                "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+                "alt": "Spacious villa"
+              }
+            },
+            {
+              "id": "4",
+              "slug": "downtown-loft",
+              "title": "Downtown Loft",
+              "price": 280000,
+              "location": "321 Urban Ave, City, State",
+              "bedrooms": 1,
+              "bathrooms": 1,
+              "sqft": 1200,
+              "image": {
+                "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80",
+                "alt": "Downtown loft"
+              }
+            },
+            {
+              "id": "5",
+              "slug": "suburban-estate",
+              "title": "Suburban Estate",
+              "price": 850000,
+              "location": "555 Country Lane, City, State",
+              "bedrooms": 6,
+              "bathrooms": 5,
+              "sqft": 5000,
+              "image": {
+                "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+                "alt": "Suburban estate"
+              }
+            },
+            {
+              "id": "6",
+              "slug": "beachfront-condo",
+              "title": "Beachfront Condo",
+              "price": 650000,
+              "location": "789 Ocean Drive, City, State",
+              "bedrooms": 3,
+              "bathrooms": 2,
+              "sqft": 2200,
+              "image": {
+                "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800&q=80",
+                "alt": "Beachfront condo"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "slug": "contact",
+      "title": "Contact Us",
+      "metaTitle": "Contact - Real Estate Company",
+      "metaDescription": "Get in touch with our real estate team",
+      "blocks": [
+        {
+          "id": "1",
+          "__component": "blocks.hero",
+          "title": "Get In Touch",
+          "subtitle": "We're here to help you find your dream property",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1920&q=80",
+            "alt": "Contact us - real estate team"
+          }
+        },
+        {
+          "id": "2",
+          "__component": "blocks.contact-form",
+          "title": "Send us a message"
+        },
+        {
+          "id": "3",
+          "__component": "blocks.google-map",
+          "address": "123 Real Estate St, City, State 12345",
+          "latitude": 40.7128,
+          "longitude": -74.006,
+          "zoom": 15,
+          "apiKey": "",
+          "pinInfo": {
+            "title": "Real Estate Company Office",
+            "description": "Visit us at our main office location",
+            "address": "123 Real Estate St, City, State 12345",
+            "phone": "+1 (555) 123-4567",
+            "email": "info@realestate.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "slug": "privacy-policy",
+      "title": "Privacy Policy",
+      "metaTitle": "Privacy Policy - Real Estate Company",
+      "metaDescription": "Our privacy policy and how we handle your personal information",
+      "blocks": [
+        {
+          "id": "1",
+          "__component": "blocks.hero",
+          "title": "Privacy Policy",
+          "subtitle": "How we protect and handle your personal information"
+        },
+        {
+          "id": "2",
+          "__component": "blocks.content",
+          "content": "<h2>Information We Collect</h2><p>We collect information that you provide directly to us, such as when you create an account, fill out a form, or contact us for support.</p><h2>How We Use Your Information</h2><p>We use the information we collect to provide, maintain, and improve our services, process transactions, and communicate with you.</p><h2>Information Sharing</h2><p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy.</p><h2>Data Security</h2><p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p><h2>Your Rights</h2><p>You have the right to access, update, or delete your personal information at any time. Please contact us if you wish to exercise these rights.</p><h2>Contact Us</h2><p>If you have any questions about this Privacy Policy, please contact us at privacy@example.com.</p>"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "slug": "terms-of-service",
+      "title": "Terms of Service",
+      "metaTitle": "Terms of Service - Real Estate Company",
+      "metaDescription": "Terms of service and conditions for using our website",
+      "blocks": [
+        {
+          "id": "1",
+          "__component": "blocks.hero",
+          "title": "Terms of Service",
+          "subtitle": "Please read these terms carefully before using our services"
+        },
+        {
+          "id": "2",
+          "__component": "blocks.content",
+          "content": "<h2>Acceptance of Terms</h2><p>By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement.</p><h2>Use License</h2><p>Permission is granted to temporarily download one copy of the materials on our website for personal, non-commercial transitory viewing only.</p><h2>Disclaimer</h2><p>The materials on our website are provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties.</p><h2>Limitations</h2><p>In no event shall our company or its suppliers be liable for any damages arising out of the use or inability to use the materials on our website.</p><h2>Accuracy of Materials</h2><p>The materials appearing on our website could include technical, typographical, or photographic errors. We do not warrant that any of the materials on its website are accurate, complete, or current.</p><h2>Modifications</h2><p>We may revise these terms of service at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p><h2>Contact Us</h2><p>If you have any questions about these Terms of Service, please contact us at legal@example.com.</p>"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "slug": "testimonials",
+      "title": "Testimonials",
+      "metaTitle": "Testimonials - Real Estate Company",
+      "metaDescription": "Read what our clients say about us",
+      "blocks": [
+        {
+          "id": "1",
+          "__component": "blocks.hero",
+          "title": "Client Testimonials",
+          "subtitle": "See what our satisfied clients have to say",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1920&q=80",
+            "alt": "Testimonials"
+          }
+        },
+        {
+          "id": "2",
+          "__component": "blocks.testimonials",
+          "title": "What Our Clients Say",
+          "testimonials": [
+            {
+              "id": "1",
+              "name": "John Doe",
+              "role": "Home Buyer",
+              "content": "Excellent service! Found my dream home in no time. The team was professional, responsive, and made the entire process smooth and stress-free.",
+              "rating": 5,
+              "avatar": {
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=faces&q=80",
+                "alt": "John Doe"
+              }
+            },
+            {
+              "id": "2",
+              "name": "Jane Smith",
+              "role": "Property Seller",
+              "content": "Professional team that helped me sell my property quickly and at a great price. I highly recommend their services!",
+              "rating": 5,
+              "avatar": {
+                "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=faces&q=80",
+                "alt": "Jane Smith"
+              }
+            },
+            {
+              "id": "3",
+              "name": "Robert Williams",
+              "role": "Home Buyer",
+              "content": "Outstanding experience from start to finish. The agents were knowledgeable, patient, and truly cared about finding the right home for us.",
+              "rating": 5,
+              "avatar": {
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=faces&q=80",
+                "alt": "Robert Williams"
+              }
+            },
+            {
+              "id": "4",
+              "name": "Emily Davis",
+              "role": "Property Seller",
+              "content": "The best real estate experience I've ever had. They handled everything professionally and got me top dollar for my property.",
+              "rating": 5,
+              "avatar": {
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=faces&q=80",
+                "alt": "Emily Davis"
+              }
+            },
+            {
+              "id": "5",
+              "name": "Michael Brown",
+              "role": "Home Buyer",
+              "content": "Exceptional service and attention to detail. They made buying our first home a breeze!",
+              "rating": 5,
+              "avatar": {
+                "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=faces&q=80",
+                "alt": "Michael Brown"
+              }
+            },
+            {
+              "id": "6",
+              "name": "Sarah Martinez",
+              "role": "Property Seller",
+              "content": "Professional, efficient, and results-driven. They exceeded all my expectations!",
+              "rating": 5,
+              "avatar": {
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=faces&q=80",
+                "alt": "Sarah Martinez"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "slug": "team",
+      "title": "Our Team",
+      "metaTitle": "Our Team - Real Estate Company",
+      "metaDescription": "Meet our experienced real estate team",
+      "blocks": [
+        {
+          "id": "1",
+          "__component": "blocks.hero",
+          "title": "Meet Our Team",
+          "subtitle": "Experienced professionals dedicated to your success",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80",
+            "alt": "Our team"
+          }
+        },
+        {
+          "id": "2",
+          "__component": "blocks.team",
+          "title": "Expert Real Estate Professionals",
+          "team": [
+            {
+              "id": "1",
+              "name": "Sarah Johnson",
+              "role": "Senior Real Estate Agent",
+              "bio": "10+ years of experience in real estate. Specializes in residential properties and first-time homebuyers.",
+              "image": {
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces&q=80",
+                "alt": "Sarah Johnson"
+              },
+              "email": "sarah@realestate.com",
+              "linkedin": "https://linkedin.com/in/sarah-johnson"
+            },
+            {
+              "id": "2",
+              "name": "Mike Chen",
+              "role": "Property Consultant",
+              "bio": "Specializes in luxury properties and commercial real estate. Expert negotiator with a proven track record.",
+              "image": {
+                "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces&q=80",
+                "alt": "Mike Chen"
+              },
+              "email": "mike@realestate.com",
+              "linkedin": "https://linkedin.com/in/mike-chen"
+            },
+            {
+              "id": "3",
+              "name": "Lisa Anderson",
+              "role": "Real Estate Agent",
+              "bio": "8 years of experience. Known for excellent customer service and market knowledge.",
+              "image": {
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces&q=80",
+                "alt": "Lisa Anderson"
+              },
+              "email": "lisa@realestate.com",
+              "linkedin": "https://linkedin.com/in/lisa-anderson"
+            },
+            {
+              "id": "4",
+              "name": "David Thompson",
+              "role": "Senior Property Consultant",
+              "bio": "15+ years in real estate. Expert in investment properties and market analysis.",
+              "image": {
+                "url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces&q=80",
+                "alt": "David Thompson"
+              },
+              "email": "david@realestate.com",
+              "linkedin": "https://linkedin.com/in/david-thompson"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "id": "1",
+      "slug": "modern-family-home",
+      "title": "Modern Family Home",
+      "price": 450000,
+      "location": "123 Main St, City, State",
+      "description": "Beautiful modern family home with 4 bedrooms and 3 bathrooms",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sqft": 2500,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Modern family home exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Modern family home living room"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Modern family home kitchen"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Modern family home bedroom"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&q=80",
+          "alt": "Modern family home bathroom"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "slug": "luxury-condo",
+      "title": "Luxury Condo",
+      "price": 320000,
+      "location": "456 Oak Ave, City, State",
+      "description": "Stylish luxury condo in the heart of the city",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1500,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
+          "alt": "Luxury condo exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Luxury condo living area"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Luxury condo bedroom"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Luxury condo balcony"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "slug": "spacious-villa",
+      "title": "Spacious Villa",
+      "price": 750000,
+      "location": "789 Pine Rd, City, State",
+      "description": "Elegant spacious villa with stunning views",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "sqft": 4000,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Spacious villa exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Spacious villa interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Spacious villa pool area"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Spacious villa garden"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "slug": "downtown-loft",
+      "title": "Downtown Loft",
+      "price": 280000,
+      "location": "321 Urban Ave, City, State",
+      "description": "Modern downtown loft with city views and contemporary design",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 1200,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&q=80",
+          "alt": "Downtown loft exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Downtown loft interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Downtown loft kitchen"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Downtown loft city view"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "slug": "suburban-estate",
+      "title": "Suburban Estate",
+      "price": 850000,
+      "location": "555 Country Lane, City, State",
+      "description": "Luxurious suburban estate with spacious grounds and modern amenities",
+      "bedrooms": 6,
+      "bathrooms": 5,
+      "sqft": 5000,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Suburban estate exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Suburban estate interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Suburban estate garden"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Suburban estate pool"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "slug": "beachfront-condo",
+      "title": "Beachfront Condo",
+      "price": 650000,
+      "location": "789 Ocean Drive, City, State",
+      "description": "Stunning beachfront condo with ocean views and resort-style amenities",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 2200,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Beachfront condo exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Beachfront condo view"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Beachfront condo balcony"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Beachfront condo interior"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "slug": "mountain-retreat",
+      "title": "Mountain Retreat",
+      "price": 520000,
+      "location": "100 Mountain View Rd, City, State",
+      "description": "Peaceful mountain retreat with breathtaking views and modern amenities",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sqft": 2800,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600585154084-4e5fe7c39198?w=1200&q=80",
+          "alt": "Mountain retreat exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Mountain retreat interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Mountain retreat view"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Mountain retreat deck"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "slug": "urban-penthouse",
+      "title": "Urban Penthouse",
+      "price": 1200000,
+      "location": "200 Skyline Blvd, City, State",
+      "description": "Luxurious penthouse with panoramic city views and rooftop terrace",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "sqft": 3500,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Urban penthouse exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Urban penthouse living room"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Urban penthouse city view"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Urban penthouse rooftop"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "slug": "cozy-cottage",
+      "title": "Cozy Cottage",
+      "price": 195000,
+      "location": "50 Garden Lane, City, State",
+      "description": "Charming cottage with beautiful garden and vintage character",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 1200,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&q=80",
+          "alt": "Cozy cottage exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Cozy cottage interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Cozy cottage garden"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Cozy cottage kitchen"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "slug": "modern-townhouse",
+      "title": "Modern Townhouse",
+      "price": 380000,
+      "location": "75 Park Avenue, City, State",
+      "description": "Contemporary townhouse with open floor plan and private garage",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1800,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Modern townhouse exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Modern townhouse interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Modern townhouse garage"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Modern townhouse backyard"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "slug": "riverside-manor",
+      "title": "Riverside Manor",
+      "price": 950000,
+      "location": "300 River Road, City, State",
+      "description": "Elegant riverside manor with private dock and landscaped grounds",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "sqft": 4500,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Riverside manor exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Riverside manor interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Riverside manor dock"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Riverside manor river view"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "slug": "studio-apartment",
+      "title": "Studio Apartment",
+      "price": 150000,
+      "location": "25 Downtown St, City, State",
+      "description": "Modern studio apartment perfect for urban living",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "sqft": 600,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1200&q=80",
+          "alt": "Studio apartment interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Studio apartment kitchen"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Studio apartment bathroom"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Studio apartment view"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "slug": "ranch-style-home",
+      "title": "Ranch Style Home",
+      "price": 425000,
+      "location": "150 Country Road, City, State",
+      "description": "Spacious ranch-style home with large backyard and covered patio",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "sqft": 2400,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Ranch style home exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Ranch style home interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Ranch style home backyard"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Ranch style home patio"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "slug": "waterfront-villa",
+      "title": "Waterfront Villa",
+      "price": 1100000,
+      "location": "400 Harbor View, City, State",
+      "description": "Stunning waterfront villa with private beach access and infinity pool",
+      "bedrooms": 6,
+      "bathrooms": 5,
+      "sqft": 5500,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Waterfront villa exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Waterfront villa pool"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Waterfront villa beach"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Waterfront villa interior"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "slug": "historic-brownstone",
+      "title": "Historic Brownstone",
+      "price": 680000,
+      "location": "125 Heritage Street, City, State",
+      "description": "Beautifully restored historic brownstone with original architectural details",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sqft": 3200,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Historic brownstone exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Historic brownstone interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Historic brownstone staircase"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Historic brownstone facade"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "slug": "garden-duplex",
+      "title": "Garden Duplex",
+      "price": 295000,
+      "location": "80 Flower Street, City, State",
+      "description": "Charming duplex with shared garden and updated kitchen",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1400,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Garden duplex exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Garden duplex interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Garden duplex garden"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Garden duplex kitchen"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "slug": "luxury-penthouse-suite",
+      "title": "Luxury Penthouse Suite",
+      "price": 1350000,
+      "location": "500 Tower Avenue, City, State",
+      "description": "Ultra-luxurious penthouse suite with concierge service and premium finishes",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "sqft": 4200,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Luxury penthouse suite"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Luxury penthouse living room"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Luxury penthouse view"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Luxury penthouse terrace"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "slug": "country-farmhouse",
+      "title": "Country Farmhouse",
+      "price": 475000,
+      "location": "200 Farm Road, City, State",
+      "description": "Quaint country farmhouse with barn and rolling acreage",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 2100,
+      "images": [
+        {
+          "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+          "alt": "Country farmhouse exterior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+          "alt": "Country farmhouse interior"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+          "alt": "Country farmhouse barn"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+          "alt": "Country farmhouse acreage"
+        }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "role": "Home Buyer",
+      "content": "Excellent service! Found my dream home in no time.",
+      "rating": 5,
+      "avatar": {
+        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=faces&q=80",
+        "alt": "John Doe"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "role": "Property Seller",
+      "content": "Professional team that helped me sell my property quickly.",
+      "rating": 5,
+      "avatar": {
+        "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=faces&q=80",
+        "alt": "Jane Smith"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Robert Williams",
+      "role": "Home Buyer",
+      "content": "Outstanding experience from start to finish. The agents were knowledgeable, patient, and truly cared about finding the right home for us.",
+      "rating": 5,
+      "avatar": {
+        "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=faces&q=80",
+        "alt": "Robert Williams"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Emily Davis",
+      "role": "Property Seller",
+      "content": "The best real estate experience I've ever had. They handled everything professionally and got me top dollar for my property.",
+      "rating": 5,
+      "avatar": {
+        "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=faces&q=80",
+        "alt": "Emily Davis"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Michael Brown",
+      "role": "Home Buyer",
+      "content": "Exceptional service and attention to detail. They made buying our first home a breeze!",
+      "rating": 5,
+      "avatar": {
+        "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=faces&q=80",
+        "alt": "Michael Brown"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Sarah Martinez",
+      "role": "Property Seller",
+      "content": "Professional, efficient, and results-driven. They exceeded all my expectations!",
+      "rating": 5,
+      "avatar": {
+        "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=faces&q=80",
+        "alt": "Sarah Martinez"
+      }
+    }
+  ],
+  "team": [
+    {
+      "id": "1",
+      "name": "Sarah Johnson",
+      "role": "Senior Real Estate Agent",
+      "bio": "10+ years of experience in real estate. Specializes in residential properties and first-time homebuyers.",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces&q=80",
+        "alt": "Sarah Johnson"
+      },
+      "email": "sarah@realestate.com",
+      "linkedin": "https://linkedin.com/in/sarah-johnson"
+    },
+    {
+      "id": "2",
+      "name": "Mike Chen",
+      "role": "Property Consultant",
+      "bio": "Specializes in luxury properties and commercial real estate. Expert negotiator with a proven track record.",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces&q=80",
+        "alt": "Mike Chen"
+      },
+      "email": "mike@realestate.com",
+      "linkedin": "https://linkedin.com/in/mike-chen"
+    },
+    {
+      "id": "3",
+      "name": "Lisa Anderson",
+      "role": "Real Estate Agent",
+      "bio": "8 years of experience. Known for excellent customer service and market knowledge.",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces&q=80",
+        "alt": "Lisa Anderson"
+      },
+      "email": "lisa@realestate.com",
+      "linkedin": "https://linkedin.com/in/lisa-anderson"
+    },
+    {
+      "id": "4",
+      "name": "David Thompson",
+      "role": "Senior Property Consultant",
+      "bio": "15+ years in real estate. Expert in investment properties and market analysis.",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces&q=80",
+        "alt": "David Thompson"
+      },
+      "email": "david@realestate.com",
+      "linkedin": "https://linkedin.com/in/david-thompson"
+    }
+  ],
+  "globalOptions": {
+    "id": "1",
+    "site": {
+      "siteName": "Real Estate Company",
+      "siteUrl": "#",
+      "siteDescription": "Your trusted partner in real estate"
+    },
+    "header": {
+      "logoText": "Real Estate Co",
+      "logo": {
+        "url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=200&h=60&fit=crop&q=80",
+        "alt": "Real Estate Company Logo"
+      },
+      "links": [
+        {
+          "text": "Home",
+          "url": "/"
+        },
+        {
+          "text": "About",
+          "url": "/about"
+        },
+        {
+          "text": "Properties",
+          "url": "/properties"
+        },
+        {
+          "text": "Testimonials",
+          "url": "/testimonials"
+        },
+        {
+          "text": "Team",
+          "url": "/team"
+        },
+        {
+          "text": "Contact",
+          "url": "/contact"
+        }
+      ]
+    },
+    "footer": {
+      "copyright": "© 2025 Real Estate Company. All rights reserved.",
+      "links": [
+        {
+          "text": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "text": "Terms of Service",
+          "url": "/terms-of-service"
+        },
+        {
+          "text": "About",
+          "url": "/about"
+        },
+        {
+          "text": "Contact",
+          "url": "/contact"
+        }
+      ],
+      "socialMedia": [
+        {
+          "name": "Facebook",
+          "url": "https://facebook.com",
+          "icon": "facebook"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com",
+          "icon": "twitter"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://instagram.com",
+          "icon": "instagram"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://linkedin.com",
+          "icon": "linkedin"
+        }
+      ]
+    }
+  }
+}

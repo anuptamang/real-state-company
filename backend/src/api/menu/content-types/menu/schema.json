@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "Menu",
+    "description": "Navigation menus (WordPress-style: pages/properties auto-available)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "label": "Menu Name",
+      "description": "Internal name for the menu (e.g., 'main-menu', 'footer-menu')"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.menu-item",
+      "required": false,
+      "label": "Menu Items",
+      "description": "Add pages, properties, or custom URLs in hierarchical order"
+    }
+  }
+}

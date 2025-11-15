@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_submissions",
+  "info": {
+    "singularName": "contact-submission",
+    "pluralName": "contact-submissions",
+    "displayName": "Contact Submission",
+    "description": "Contact form submissions from the website"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Name"
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "label": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "required": false,
+      "label": "Phone"
+    },
+    "message": {
+      "type": "text",
+      "required": true,
+      "label": "Message"
+    },
+    "read": {
+      "type": "boolean",
+      "default": false,
+      "label": "Status",
+      "description": "Mark as read when admin has viewed this submission"
+    }
+  }
+}

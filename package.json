@@ -1,0 +1,24 @@
+{
+  "name": "company-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Company website with Nuxt frontend and Strapi backend",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:backend\" \"npm:dev:frontend\"",
+    "dev:backend": "cd backend && npm run develop",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "start": "cd frontend && npm run start",
+    "typecheck": "cd frontend && npm run typecheck",
+    "test": "cd frontend && npm run test",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=6.0.0"
+  }
+}

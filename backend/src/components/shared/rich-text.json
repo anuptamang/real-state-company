@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_rich_texts",
+  "info": {
+    "displayName": "Rich Text",
+    "icon": "align-justify",
+    "description": "Rich text content with formatting"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "richtext",
+      "required": true,
+      "label": "Content"
+    }
+  }
+}

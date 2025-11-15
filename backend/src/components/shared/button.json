@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_button",
+  "info": {
+    "displayName": "button",
+    "description": "",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true,
+      "label": "Text"
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "label": "URL"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_feature",
+  "info": {
+    "displayName": "feature",
+    "description": "",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "label": "Title"
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "label": "Description"
+    },
+    "icon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.icon",
+      "required": false,
+      "label": "Icon",
+      "description": "Select a Lucide icon"
+    }
+  }
+}

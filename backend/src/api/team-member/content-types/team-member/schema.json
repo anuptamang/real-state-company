@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team",
+  "info": {
+    "singularName": "team-member",
+    "pluralName": "team",
+    "displayName": "Team",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Name"
+    },
+    "role": {
+      "type": "string",
+      "required": true,
+      "label": "Role"
+    },
+    "bio": {
+      "type": "text",
+      "required": false,
+      "label": "Biography"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"],
+      "label": "Image"
+    },
+    "email": {
+      "type": "email",
+      "required": false,
+      "label": "Email"
+    },
+    "linkedin": {
+      "type": "string",
+      "required": false,
+      "label": "LinkedIn URL"
+    }
+  }
+}

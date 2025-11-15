@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_sliders",
+  "info": {
+    "displayName": "Slider",
+    "icon": "address-book",
+    "description": "Image slider/carousel"
+  },
+  "options": {},
+  "attributes": {
+    "files": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"],
+      "label": "Images"
+    }
+  }
+}
