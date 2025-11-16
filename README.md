@@ -6,7 +6,6 @@ A modern company website built with Nuxt 4 frontend and Strapi backend.
 
 - **Frontend**: Nuxt 4, Vue 3, Tailwind CSS v4, shadcn-vue
 - **Backend**: Strapi 5 (headless CMS)
-- **Testing**: Vitest, @testing-library/vue
 
 ## Quick Start
 
@@ -132,7 +131,6 @@ company-website/
 - `npm run install:all` - Install all dependencies
 - `npm run build` - Build frontend for production
 - `npm run typecheck` - Type check frontend code
-- `npm run test` - Run frontend tests
 
 ### Backend
 
@@ -146,7 +144,6 @@ company-website/
 - `cd frontend && npm run build` - Build for production
 - `cd frontend && npm run start` - Start production server
 - `cd frontend && npm run typecheck` - Type check
-- `cd frontend && npm run test` - Run tests
 
 ## Features
 
@@ -157,7 +154,6 @@ company-website/
 - ✅ **Component Library** - shadcn-vue components
 - ✅ **SEO Optimized** - Meta tags and structured data
 - ✅ **Fallback System** - Works with or without Strapi
-- ✅ **Test Coverage** - Comprehensive test suite
 
 ## Development Workflow
 
