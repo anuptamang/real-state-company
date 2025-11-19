@@ -38,6 +38,7 @@ const { getPropertyBySlug } = useMockData();
 
 interface Property {
   id: string;
+  strapiId?: number; // Numeric ID for Strapi relations
   slug: string;
   title: string;
   price: number;
@@ -76,6 +77,23 @@ if (!property.data.value) {
 }
 
 const propertyData = computed(() => property.data.value!);
+
+// Debug: Log property data to check strapiId
+if (process.client) {
+  watch(
+    () => propertyData.value,
+    (prop) => {
+      if (prop) {
+        console.log("Property data:", {
+          id: prop.id,
+          strapiId: (prop as any).strapiId,
+          title: prop.title,
+        });
+      }
+    },
+    { immediate: true }
+  );
+}
 
 useHead({
   title: propertyData.value.title || "Property Details",
@@ -142,6 +160,33 @@ const showNavigation = computed(() => {
 const showPagination = computed(() => {
   return galleryImages.value.length > 1;
 });
+
+// Reply state
+const replyingTo = ref<number | null>(null);
+const { isAuthenticated } = useAuth();
+
+const handleReply = (commentId: number) => {
+  if (!isAuthenticated.value) {
+    // Redirect to login if not authenticated
+    navigateTo({
+      path: "/login",
+      query: {
+        redirect: route.fullPath,
+      },
+    });
+    return;
+  }
+  replyingTo.value = commentId;
+  // Scroll to comment form
+  nextTick(() => {
+    const formElement = document.querySelector(
+      '[data-comment-form]'
+    ) as HTMLElement;
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  });
+};
 </script>
 
 <template>
@@ -342,6 +387,34 @@ const showPagination = computed(() => {
               </div>
             </CardContent>
           </Card>
+
+          <!-- Comments Section -->
+          <div class="space-y-6">
+            <PropertyComments
+              :property-id="propertyData.strapiId || propertyData.id"
+              @reply="handleReply"
+            />
+            <!-- Show comment form for authenticated users, but only if there are comments or if not replying -->
+            <div
+              v-if="isAuthenticated && !replyingTo"
+              data-comment-form
+            >
+              <PropertyCommentForm
+                :property-id="propertyData.strapiId || propertyData.id"
+              />
+            </div>
+            <!-- Show reply form when replying -->
+            <div
+              v-if="isAuthenticated && replyingTo"
+              data-comment-form
+            >
+              <PropertyCommentForm
+                :property-id="propertyData.strapiId || propertyData.id"
+                :parent-id="replyingTo"
+                @cancel="replyingTo = null"
+              />
+            </div>
+          </div>
         </div>
 
         <!-- Sidebar -->

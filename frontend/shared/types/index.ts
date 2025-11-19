@@ -142,3 +142,25 @@ export interface Footer {
   }>;
   menu?: MenuItem[]; // WordPress-style menu items
 }
+
+// User (needed for PropertyComment)
+export interface User {
+  id: number;
+  username: string;
+  email: string;
+  confirmed?: boolean;
+  blocked?: boolean;
+}
+
+// Property Comment
+export interface PropertyComment {
+  id: number;
+  property?: number | { id: number };
+  user?: number | User;
+  comment: string;
+  parent?: number | PropertyComment | null;
+  replies?: PropertyComment[];
+  approved: boolean;
+  createdAt?: string;
+  updatedAt?: string;
+}

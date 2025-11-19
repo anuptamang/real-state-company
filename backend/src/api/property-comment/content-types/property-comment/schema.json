@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "property_comments",
+  "info": {
+    "singularName": "property-comment",
+    "pluralName": "property-comments",
+    "displayName": "Property Comment",
+    "description": "Comments and replies for properties"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "property": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property.property",
+      "inversedBy": "comments",
+      "required": true
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "comment": {
+      "type": "text",
+      "required": true,
+      "label": "Comment"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::property-comment.property-comment",
+      "inversedBy": "replies"
+    },
+    "replies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::property-comment.property-comment",
+      "mappedBy": "parent"
+    },
+    "approved": {
+      "type": "boolean",
+      "default": false,
+      "label": "Approved",
+      "description": "Admin must approve comments before they are visible"
+    }
+  }
+}

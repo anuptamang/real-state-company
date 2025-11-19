@@ -63,6 +63,12 @@
       "multiple": true,
       "required": false,
       "label": "Images"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::property-comment.property-comment",
+      "mappedBy": "property"
     }
   }
 }

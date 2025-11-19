@@ -275,7 +275,8 @@ export const useStrapi = () => {
       }
 
       return {
-        id: String(entity.id),
+        id: String(entity.id), // Keep as string for frontend use
+        strapiId: entity.id, // Keep numeric ID for Strapi relations
         slug: data.slug || "",
         title: data.title || "",
         price: parseFloat(data.price) || 0,
