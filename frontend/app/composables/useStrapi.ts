@@ -80,7 +80,9 @@ export const useStrapi = () => {
         },
       });
 
-      return transformStrapiPages(response, strapiUrl);
+      // If API returns empty array, return empty array (don't fallback to mock)
+      const transformed = transformStrapiPages(response, strapiUrl);
+      return transformed;
     } catch (error: any) {
       const isConnectionError =
         error?.message?.includes("fetch failed") ||
@@ -120,8 +122,21 @@ export const useStrapi = () => {
       });
 
       // Extract blocks from Strapi response
-      const blocks =
-        response.data?.attributes?.blocks || response.data?.blocks || [];
+      // Handle different response structures:
+      // 1. { data: { attributes: { blocks: [...] } } } - nested format
+      // 2. { data: { blocks: [...] } } - flat format
+      // 3. { data: { id, attributes: {...} } } - single entity with blocks in attributes
+      let blocks: any[] = [];
+      if (response.data) {
+        if (response.data.attributes?.blocks) {
+          blocks = response.data.attributes.blocks;
+        } else if (response.data.blocks) {
+          blocks = response.data.blocks;
+        } else if (Array.isArray(response.data)) {
+          // If data is an array, it might be blocks directly
+          blocks = response.data;
+        }
+      }
 
       // Transform Strapi blocks to our format
       return transformStrapiBlocks(blocks, strapiUrl);
@@ -159,6 +174,11 @@ export const useStrapi = () => {
           Authorization: `Bearer ${apiToken}`,
         },
       });
+
+      // If API returns null data, return null (don't fallback to mock)
+      if (!response || !response.data) {
+        return null;
+      }
 
       // Transform Strapi response to our format
       // The transformer expects the full response object with { data: {...} } structure

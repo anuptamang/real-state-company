@@ -8,6 +8,11 @@ const __dirname = dirname(__filename);
 
 export default defineConfig({
   test: {
+    env: {
+      NUXT_PUBLIC_DATA_SOURCE: "cms",
+      NUXT_PUBLIC_STRAPI_URL: "https://test.strapi.com",
+      NUXT_PUBLIC_STRAPI_API_TOKEN: "test-token",
+    },
     projects: [
       {
         test: {

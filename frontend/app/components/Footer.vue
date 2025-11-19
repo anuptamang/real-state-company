@@ -17,6 +17,7 @@ interface Props {
   menu?: Footer["menu"];
   siteUrl?: string;
   siteName?: string;
+  copyright?: string;
 }
 
 const props = defineProps<Props>();
@@ -99,7 +100,7 @@ const getIconFromUrl = (url: string) => {
 </script>
 
 <template>
-  <footer class="w-full bg-black mt-auto">
+  <footer class="w-full bg-black mt-auto border-t">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Footer Links -->
@@ -137,27 +138,32 @@ const getIconFromUrl = (url: string) => {
         </div>
 
         <!-- Copyright -->
-        <div v-if="siteName || siteUrl" class="space-y-4">
+        <div v-if="copyright || siteName || siteUrl" class="space-y-4">
           <p class="text-sm text-muted-foreground">
-            &copy; {{ new Date().getFullYear() }}
-            <template v-if="siteUrl && siteName">
-              <a
-                :href="siteUrl"
-                class="text-muted-foreground hover:text-white transition-colors no-underline"
-                >{{ siteName }}</a
-              >
+            <template v-if="copyright">
+              {{ copyright }}
             </template>
-            <template v-else-if="siteName">
-              {{ siteName }}
+            <template v-else>
+              &copy; {{ new Date().getFullYear() }}
+              <template v-if="siteUrl && siteName">
+                <a
+                  :href="siteUrl"
+                  class="text-muted-foreground hover:text-white transition-colors no-underline"
+                  >{{ siteName }}</a
+                >
+              </template>
+              <template v-else-if="siteName">
+                {{ siteName }}
+              </template>
+              <template v-else-if="siteUrl">
+                <a
+                  :href="siteUrl"
+                  class="text-muted-foreground hover:text-white transition-colors no-underline"
+                  >{{ siteUrl }}</a
+                >
+              </template>
+              . All rights reserved.
             </template>
-            <template v-else-if="siteUrl">
-              <a
-                :href="siteUrl"
-                class="text-muted-foreground hover:text-white transition-colors no-underline"
-                >{{ siteUrl }}</a
-              >
-            </template>
-            . All rights reserved.
           </p>
         </div>
       </div>

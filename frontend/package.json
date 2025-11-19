@@ -12,12 +12,12 @@
     "lint": "eslint .",
     "typecheck": "nuxt typecheck",
     "format": "prettier --write .",
-    "test": "vitest",
+    "test": "NUXT_PUBLIC_DATA_SOURCE=cms NUXT_PUBLIC_STRAPI_URL=https://test.strapi.com NUXT_PUBLIC_STRAPI_API_TOKEN=test-token vitest",
     "test:unit": "vitest --project unit",
-    "test:nuxt": "vitest --project nuxt",
+    "test:nuxt": "NUXT_PUBLIC_DATA_SOURCE=cms NUXT_PUBLIC_STRAPI_URL=https://test.strapi.com NUXT_PUBLIC_STRAPI_API_TOKEN=test-token vitest --project nuxt",
     "test:e2e": "vitest --project e2e",
-    "test:watch": "vitest --watch",
-    "test:coverage": "vitest --coverage"
+    "test:watch": "NUXT_PUBLIC_DATA_SOURCE=cms NUXT_PUBLIC_STRAPI_URL=https://test.strapi.com NUXT_PUBLIC_STRAPI_API_TOKEN=test-token vitest --watch",
+    "test:coverage": "NUXT_PUBLIC_DATA_SOURCE=cms NUXT_PUBLIC_STRAPI_URL=https://test.strapi.com NUXT_PUBLIC_STRAPI_API_TOKEN=test-token vitest --coverage"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
