@@ -1,163 +1,105 @@
-# Company Website
+# Real Estate Company Website
 
-A modern company website built with Nuxt 4 frontend and Strapi backend.
+Welcome to our modern real estate company website! Explore our properties, learn about our team, and get in touch with us.
 
-## Tech Stack
+## 🌟 Features
 
-- **Frontend**: Nuxt 4, Vue 3, Tailwind CSS v4, shadcn-vue
-- **Backend**: Strapi 5 (headless CMS)
+### 🏠 Property Listings
 
-## Quick Start
+Browse our extensive collection of available properties:
 
-### 1. Install Dependencies
+- **Property Search**: View all available properties in one place
+- **Detailed Property Pages**: Each property includes:
+  - High-quality image galleries with lightbox viewing
+  - Property specifications (bedrooms, bathrooms, square footage)
+  - Location information
+  - Detailed descriptions
+  - Pricing information
+  - Contact options
 
-```bash
-# Install all dependencies (root, backend, frontend)
-npm run install:all
-```
+### 📄 Dynamic Pages
 
-Or install individually:
+Our website features flexible, content-rich pages:
 
-```bash
-# Backend
-cd backend && npm install
+- **Home Page**: Welcome page with featured content
+- **About Us**: Learn about our company and mission
+- **Properties**: Browse all available properties
+- **Team**: Meet our experienced real estate professionals
+- **Testimonials**: Read what our clients say about us
+- **Contact**: Get in touch with our team
 
-# Frontend
-cd frontend && npm install
-```
+### 📧 Contact Forms
 
-### 2. Start Development Servers
+Easily reach out to us through our contact forms:
 
-**Option A: Start both servers together (recommended)**
+- Submit inquiries directly from the website
+- Include your name, email, phone, and message
+- Forms are validated to ensure accurate information
+- Receive confirmation when your message is sent
 
-```bash
-npm run dev
-```
+### 🎨 Rich Content Blocks
 
-This will start:
+Our pages are built with dynamic content blocks:
 
-- Strapi backend on `http://localhost:1337`
-- Nuxt frontend on `http://localhost:3000`
+- **Hero Sections**: Eye-catching banners with call-to-action buttons
+- **Feature Highlights**: Showcase key services and benefits
+- **Image Galleries**: Beautiful photo displays
+- **Call-to-Action Sections**: Clear prompts to engage with us
+- **Content Sections**: Rich text content with formatting
+- **Interactive Maps**: View property locations
+- **Team Profiles**: Meet our team members
+- **Client Testimonials**: Read reviews from satisfied clients
 
-**Option B: Start servers separately**
+### 📱 Responsive Design
 
-Terminal 1 - Backend:
+Our website is fully responsive and works seamlessly on:
 
-```bash
-cd backend
-npm run develop
-```
+- Desktop computers
+- Tablets
+- Mobile phones
 
-Terminal 2 - Frontend:
+All features are optimized for the best experience on any device.
 
-```bash
-cd frontend
-npm run dev
-```
+### 🔍 SEO Optimized
 
-### 3. Set Up Strapi
+Our website is built with search engine optimization in mind:
 
-1. **Access Strapi Admin Panel**
+- Fast loading times
+- Mobile-friendly design
+- Proper meta tags and descriptions
+- Structured data for better search visibility
 
-   - Go to `http://localhost:1337/admin`
-   - Create your admin account (first time only)
+## 📍 Navigation
 
-2. **Create Content Types**
+The website includes easy navigation through:
 
-   - Create the following content types:
-     - Page
-     - Property
-     - Testimonial
-     - Team Member
-     - Contact Submission
-     - Global Option
-     - Menu
+- **Header Menu**: Quick access to main pages
+- **Footer Links**: Additional resources and information
+- **Property Links**: Direct links to individual properties
+- **Breadcrumbs**: Clear navigation paths
 
-3. **Configure Permissions**
+## 📞 Getting in Touch
 
-   - Go to **Settings** > **Users & Permissions Plugin** > **Roles** > **Public**
-   - Enable `create` for the `Contact Submission` content type
+There are multiple ways to contact us:
 
-4. **Configure Frontend**
+1. **Contact Form**: Fill out the contact form on our Contact page
+2. **Property Pages**: Use contact options on individual property pages
+3. **Contact Information**: Find our contact details in the footer
 
-5. **Create `.env` file in frontend directory**
+## 🔒 Privacy & Terms
 
-   ```bash
-   cd frontend
-   cp .env.example .env
-   ```
+- **Privacy Policy**: Learn how we protect your information
+- **Terms of Service**: Review our terms and conditions
 
-6. **Update `.env` with Strapi credentials**
+## 🚀 Performance
 
-   ```env
-   NUXT_PUBLIC_STRAPI_URL=http://localhost:1337
-   NUXT_PUBLIC_STRAPI_API_TOKEN=your-token-here
-   ```
+Our website is designed for speed and performance:
 
-7. **Restart frontend dev server** (if running)
+- Fast page loading
+- Optimized images
+- Smooth navigation
+- Reliable uptime
 
-### 5. Create Content
+---
 
-1. Go to **Content Manager** in Strapi admin
-2. Create pages, properties, testimonials, team members
-3. Create GlobalOptions (single type)
-4. **Publish all content** (important!)
-
-## Project Structure
-
-```
-company-website/
-├── backend/              # Strapi backend
-│   ├── src/
-│   │   ├── api/         # API routes
-│   │   └── components/  # Strapi components
-│   ├── config/          # Strapi configuration
-│   └── README.md        # Backend documentation
-├── frontend/            # Nuxt frontend
-│   ├── app/
-│   │   ├── components/  # Vue components
-│   │   ├── pages/       # Nuxt pages
-│   │   ├── composables/ # Vue composables
-│   │   └── utils/       # Utilities
-│   └── docs/            # Frontend documentation
-└── README.md            # This file
-```
-
-## Available Scripts
-
-### Root Level
-
-- `npm run dev` - Start both backend and frontend servers
-- `npm run install:all` - Install all dependencies
-- `npm run build` - Build frontend for production
-- `npm run typecheck` - Type check frontend code
-
-### Backend
-
-- `cd backend && npm run develop` - Start Strapi dev server
-- `cd backend && npm run build` - Build Strapi admin panel
-- `cd backend && npm run start` - Start Strapi production server
-
-### Frontend
-
-- `cd frontend && npm run dev` - Start Nuxt dev server
-- `cd frontend && npm run build` - Build for production
-- `cd frontend && npm run start` - Start production server
-- `cd frontend && npm run typecheck` - Type check
-
-## Features
-
-- ✅ **Modular Block System** - Build pages from reusable blocks
-- ✅ **Dynamic Content** - Content managed in Strapi CMS
-- ✅ **Type Safety** - Full TypeScript support
-- ✅ **Responsive Design** - Mobile-first with Tailwind CSS
-- ✅ **Component Library** - shadcn-vue components
-- ✅ **SEO Optimized** - Meta tags and structured data
-- ✅ **Fallback System** - Works with or without Strapi
-
-## Development Workflow
-
-1. **Start both servers**: `npm run dev`
-2. **Edit content in Strapi**: Changes reflect immediately
-3. **Edit frontend code**: Hot reload updates automatically
-4. **Test changes**: Visit `http://localhost:3000`
+**Note**: This website is built with modern web technologies to provide you with the best browsing experience. If you encounter any issues or have questions, please don't hesitate to contact us through our contact form.
