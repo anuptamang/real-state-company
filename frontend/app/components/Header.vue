@@ -1,7 +1,15 @@
 <script setup lang="ts">
 import type { Header } from "#shared/types";
 import { Button } from "~/components/ui/button";
-import { X } from "lucide-vue-next";
+import { X, User, LogOut, Menu } from "lucide-vue-next";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "~/components/ui/dropdown-menu";
 
 interface Props {
   logo?: Header["logo"];
@@ -39,6 +47,8 @@ const navigationLinks = computed(() => {
 
 const route = useRoute();
 const isMobileMenuOpen = ref(false);
+const { isAuthenticated, user, logout } = useAuth();
+const router = useRouter();
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
@@ -46,6 +56,11 @@ const toggleMobileMenu = () => {
 
 const closeMobileMenu = () => {
   isMobileMenuOpen.value = false;
+};
+
+const handleLogout = () => {
+  logout();
+  router.push("/");
 };
 </script>
 
@@ -99,8 +114,73 @@ const closeMobileMenu = () => {
           </NuxtLink>
         </div>
 
+        <!-- Auth Section -->
+        <div class="hidden md:flex items-center gap-4">
+          <!-- User Menu (if logged in) -->
+          <DropdownMenu v-if="isAuthenticated">
+            <DropdownMenuTrigger>
+              <Button variant="ghost" size="icon" class="h-9 w-9 rounded-full">
+                <User class="h-5 w-5" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuLabel>
+                {{ user?.username || user?.email || "User" }}
+              </DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem as-child>
+                <NuxtLink to="/account" class="flex items-center">
+                  <User class="mr-2 h-4 w-4" />
+                  My Account
+                </NuxtLink>
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem @click="handleLogout">
+                <LogOut class="mr-2 h-4 w-4" />
+                Logout
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          <!-- Login/Signup Buttons (if not logged in) -->
+          <div v-else class="flex items-center gap-2">
+            <Button as-child variant="ghost" size="sm">
+              <NuxtLink to="/login">Login</NuxtLink>
+            </Button>
+            <Button as-child size="sm">
+              <NuxtLink to="/signup">Sign Up</NuxtLink>
+            </Button>
+          </div>
+        </div>
+
         <!-- Mobile Menu Button -->
-        <div class="md:hidden">
+        <div class="md:hidden flex items-center gap-2">
+          <!-- Mobile Auth Button -->
+          <DropdownMenu v-if="isAuthenticated">
+            <DropdownMenuTrigger>
+              <Button variant="ghost" size="icon" class="h-9 w-9">
+                <User class="h-5 w-5" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuLabel>
+                {{ user?.username || user?.email || "User" }}
+              </DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem as-child>
+                <NuxtLink to="/account" class="flex items-center">
+                  <User class="mr-2 h-4 w-4" />
+                  My Account
+                </NuxtLink>
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem @click="handleLogout">
+                <LogOut class="mr-2 h-4 w-4" />
+                Logout
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+          
           <Button
             variant="ghost"
             size="icon"
@@ -154,6 +234,35 @@ const closeMobileMenu = () => {
             >
               {{ link.text }}
             </NuxtLink>
+            
+            <!-- Mobile Auth Links -->
+            <div v-if="!isAuthenticated" class="pt-4 border-t space-y-2">
+              <NuxtLink
+                to="/login"
+                @click="closeMobileMenu"
+                class="block text-base font-medium text-foreground hover:text-primary transition-colors py-2"
+              >
+                Login
+              </NuxtLink>
+              <NuxtLink
+                to="/signup"
+                @click="closeMobileMenu"
+                class="block text-base font-medium text-primary hover:underline transition-colors py-2"
+              >
+                Sign Up
+              </NuxtLink>
+            </div>
+            <div v-else class="pt-4 border-t space-y-2">
+              <div class="text-sm text-muted-foreground py-2">
+                {{ user?.username || user?.email }}
+              </div>
+              <button
+                @click="handleLogout; closeMobileMenu()"
+                class="block w-full text-left text-base font-medium text-foreground hover:text-primary transition-colors py-2"
+              >
+                Logout
+              </button>
+            </div>
           </nav>
         </div>
       </Transition>

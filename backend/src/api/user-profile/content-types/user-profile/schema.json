@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_profiles",
+  "info": {
+    "singularName": "user-profile",
+    "pluralName": "user-profiles",
+    "displayName": "User Profile",
+    "description": "Extended user profile information"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": false,
+      "label": "Full Name"
+    },
+    "address": {
+      "type": "text",
+      "required": false,
+      "label": "Address"
+    }
+  }
+}

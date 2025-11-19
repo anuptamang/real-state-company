@@ -142,3 +142,23 @@ export interface Footer {
   }>;
   menu?: MenuItem[]; // WordPress-style menu items
 }
+
+// User
+export interface User {
+  id: number;
+  username: string;
+  email: string;
+  confirmed?: boolean;
+  blocked?: boolean;
+}
+
+// User Profile
+export interface UserProfile {
+  id: number;
+  user?: number | User;
+  name?: string;
+  address?: string;
+  createdAt?: string;
+  updatedAt?: string;
+}
+
